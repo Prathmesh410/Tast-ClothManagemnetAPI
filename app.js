@@ -9,6 +9,7 @@ const cors = require("cors");
 
 //imports
 const authRoutes = require("./routes/auth");
+const userRoutes = require("./routes/user");
 
 //Middlewares
 app.use(bodyParser.json());
@@ -18,6 +19,7 @@ app.use(cors());
 
 //Routes
 app.use("/api",authRoutes);
+app.use("/api",userRoutes);
 
 
 //Database Connection
