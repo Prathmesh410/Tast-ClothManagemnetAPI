@@ -26,7 +26,7 @@ signin);
 
 router.get("/signout" ,signout);
 
-router.get("/testroute",isSignedIn,isAuthenticated,(req,res)=>{
+router.get("/testroute",isSignedIn,isAdmin,(req,res)=>{
     res.json({
         test :"User is signed in and Authenticated and admin"
     })

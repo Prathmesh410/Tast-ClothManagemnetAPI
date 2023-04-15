@@ -10,6 +10,8 @@ const cors = require("cors");
 //imports
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
+const productRoutes = require("./routes/cloth");
+const categoryRoutes = require("./routes/category")
 
 //Middlewares
 app.use(bodyParser.json());
@@ -20,6 +22,8 @@ app.use(cors());
 //Routes
 app.use("/api",authRoutes);
 app.use("/api",userRoutes);
+app.use("/api",productRoutes);
+app.use("/api",categoryRoutes);
 
 
 //Database Connection
