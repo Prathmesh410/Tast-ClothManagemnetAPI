@@ -32,11 +32,11 @@ const  uuidv4  = require('uuid/v4');
 
     salt : String,
 
-    role : {
-        type : Number,
-        default : 0,
-
-    },
+    role: {
+        type: String,
+        enum: ['seller', 'user','admin'],
+        default: 'user'
+      },
     purchases : {
         type : Array,
         default : []
