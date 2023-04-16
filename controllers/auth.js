@@ -64,7 +64,7 @@ exports.signin = (req, res) => {
 
 exports.signout = (req,res) => {
   res.clearCookie("token");
-    res.json({
+   return res.json({
         message :"user signout sucsess."
     })
 };
@@ -88,7 +88,7 @@ exports.isAuthenticated = (req,res,next) => {
 
 exports.isAdmin = (req,res,next) => {
     if(req.profile.role !== "admin"){
-      res.status(403).json({
+     return res.status(403).json({
         error : "Not admin"
       });
     }
@@ -97,7 +97,7 @@ exports.isAdmin = (req,res,next) => {
 
 exports.isSeller = (req,res,next) => {
     if(req.profile.role !== "seller"){
-      res.status(403).json({
+     return res.status(403).json({
         error : "Not Seller"
       });
     }

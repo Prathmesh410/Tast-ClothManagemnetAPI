@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "f1d9e06a-6be1-454b-82c0-c609c455952c",
+		"_postman_id": "0f907b5c-fc46-45f5-b19d-0c10d16c5349",
 		"name": "Cloth Management API",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22932377"
 	},
 	"item": [
 		{
@@ -23,7 +24,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE1NjQzNjd9.nmmEsekXDVwrL6yZxN2JiNWJ5Yhg9ZOIVH33PT439hM",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNiY2NjOTFmYzY5MTAwMjFmMmM4YmEiLCJpYXQiOjE2ODE2NDYxNjV9.JzrObkgXf81HmX3uMkGQEr6uta8sNnJ9PWRfv10q4TY",
 								"type": "default"
 							}
 						],
@@ -32,16 +33,18 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8400/api/user/643a8b40fb35ac3a90e91a43",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/user/643bccc91fc6910021f2c8ba",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"user",
-								"643a8b40fb35ac3a90e91a43"
+								"643bccc91fc6910021f2c8ba"
 							]
 						}
 					},
@@ -59,7 +62,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhYWQ3M2JiN2Y0NzA5YzBlODVkNTgiLCJpYXQiOjE2ODE1NjcwOTV9.L6bbHHQu4uIYEpmSMrOQ4QSSfI7QHpq8tEOyjNX4VGs",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNiY2NjOTFmYzY5MTAwMjFmMmM4YmEiLCJpYXQiOjE2ODE2NDYxNjV9.JzrObkgXf81HmX3uMkGQEr6uta8sNnJ9PWRfv10q4TY",
 								"type": "default"
 							}
 						],
@@ -68,16 +71,18 @@
 							"raw": "{\r\n    \"role\":\"admin\"\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8400/api/user/643aad73bb7f4709c0e85d58",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/user/643bccc91fc6910021f2c8ba",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"user",
-								"643aad73bb7f4709c0e85d58"
+								"643bccc91fc6910021f2c8ba"
 							]
 						}
 					},
@@ -95,21 +100,23 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhYWQ3M2JiN2Y0NzA5YzBlODVkNTgiLCJpYXQiOjE2ODE1NjcwOTV9.L6bbHHQu4uIYEpmSMrOQ4QSSfI7QHpq8tEOyjNX4VGs",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNiY2NjOTFmYzY5MTAwMjFmMmM4YmEiLCJpYXQiOjE2ODE2NDYxNjV9.JzrObkgXf81HmX3uMkGQEr6uta8sNnJ9PWRfv10q4TY",
 								"type": "default"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8400/api/user/643aad73bb7f4709c0e85d58",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/user/643bccc91fc6910021f2c8ba",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"user",
-								"643aad73bb7f4709c0e85d58"
+								"643bccc91fc6910021f2c8ba"
 							]
 						}
 					},
@@ -132,13 +139,13 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE1NzkyNzd9.LKx6-GppxN2ZX-2YeJcAAltK_ALfgi7odVqZOsyxNag",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNiY2MxMTc4MzFlMzMyYmMzMzY2ZTMiLCJpYXQiOjE2ODE2NDI0ODN9.3jDnHt36YkTadXKH39zTpOFEcdcghK5VfoiNMVhjPJc",
 								"type": "default"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Summer male\",\r\n    \"size\":\"40\",\r\n    \"season\":\"summer\",\r\n    \"gender\":\"male\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Winter male\",\r\n    \"size\":\"40\",\r\n    \"season\":\"Winter\",\r\n    \"gender\":\"male\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -146,17 +153,19 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8400/api/category/create/643a8b40fb35ac3a90e91a43",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/category/create/643bcc117831e332bc3366e3",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"category",
 								"create",
-								"643a8b40fb35ac3a90e91a43"
+								"643bcc117831e332bc3366e3"
 							]
 						}
 					},
@@ -166,7 +175,21 @@
 					"name": "All categories",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://cloth.up.railway.app/api/categories",
+							"protocol": "https",
+							"host": [
+								"cloth",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
 					},
 					"response": []
 				},
@@ -182,16 +205,18 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8400/api/category/643adcf0794c92400829926e",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/category/643bd414465bbd0021eaddb0",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"category",
-								"643adcf0794c92400829926e"
+								"643bd414465bbd0021eaddb0"
 							]
 						}
 					},
@@ -209,7 +234,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE1Nzk4MTV9.oDaQl7PrxhGfS0pLGSnGfsRSN0U88FCZDMEp5cxT7ak",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNiY2MxMTc4MzFlMzMyYmMzMzY2ZTMiLCJpYXQiOjE2ODE2NDI0ODN9.3jDnHt36YkTadXKH39zTpOFEcdcghK5VfoiNMVhjPJc",
 								"type": "default"
 							}
 						],
@@ -223,17 +248,19 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8400/api/category/643adcf0794c92400829926e/643a8b40fb35ac3a90e91a43",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/category/643bd414465bbd0021eaddb0/643bcc117831e332bc3366e3",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"category",
-								"643adcf0794c92400829926e",
-								"643a8b40fb35ac3a90e91a43"
+								"643bd414465bbd0021eaddb0",
+								"643bcc117831e332bc3366e3"
 							]
 						}
 					},
@@ -243,19 +270,27 @@
 					"name": "Delete category",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNiY2MxMTc4MzFlMzMyYmMzMzY2ZTMiLCJpYXQiOjE2ODE2NDI0ODN9.3jDnHt36YkTadXKH39zTpOFEcdcghK5VfoiNMVhjPJc",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "http://localhost:8400/api/category/643adcf0794c92400829926e/643a8b40fb35ac3a90e91a43",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/category/643bd414465bbd0021eaddb0/643bcc117831e332bc3366e3",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"category",
-								"643adcf0794c92400829926e",
-								"643a8b40fb35ac3a90e91a43"
+								"643bd414465bbd0021eaddb0",
+								"643bcc117831e332bc3366e3"
 							]
 						}
 					},
@@ -278,7 +313,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE2MTQyMjZ9.7BBf5HSFrvXtke4rycMC3Gjl7luuJ9hdfomw_yCL4b4",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNiY2MxMTc4MzFlMzMyYmMzMzY2ZTMiLCJpYXQiOjE2ODE2NDA0OTZ9.d4zHOhObMKMwHyJvWqTjbcZ-7CQznnAHn_2HfGmAevQ",
 								"type": "default"
 							}
 						],
@@ -287,7 +322,7 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "Cotton T-Shirt white 3",
+									"value": "Cotton T-Shirt white 10",
 									"type": "default"
 								},
 								{
@@ -318,25 +353,22 @@
 									"value": "24.5",
 									"type": "default"
 								}
-							],
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							]
 						},
 						"url": {
-							"raw": "http://localhost:8400/api/product/create/643a8b40fb35ac3a90e91a43",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/product/create/643bcc117831e332bc3366e3",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"product",
 								"create",
-								"643a8b40fb35ac3a90e91a43"
+								"643bcc117831e332bc3366e3"
 							]
 						}
 					},
@@ -359,12 +391,14 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8400/api/products",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/products",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"products"
@@ -401,12 +435,14 @@
 							"urlencoded": []
 						},
 						"url": {
-							"raw": "http://localhost:8400/api/product/643b7718063c4423249e4db3/643a8b40fb35ac3a90e91a43",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/product/643b7718063c4423249e4db3/643a8b40fb35ac3a90e91a43",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"product",
@@ -450,12 +486,14 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:8400/api/product/643b9cffd7f77931f0091b54/643a8b40fb35ac3a90e91a43",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/product/643b9cffd7f77931f0091b54/643a8b40fb35ac3a90e91a43",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"product",
@@ -478,12 +516,14 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8400/api/product/643bb33d46d5cf2bd472d631",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/product/643bb33d46d5cf2bd472d631",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"product",
@@ -505,12 +545,14 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8400/api/products/categories",
-							"protocol": "http",
+							"raw": "https://cloth.up.railway.app/api/products/categories",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"cloth",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "8400",
 							"path": [
 								"api",
 								"products",
@@ -529,7 +571,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\" :\"POSTsd\",\r\n    \"email\" : \"test8@test.com\",\r\n    \"password\" : \"12345678\"\r\n}",
+					"raw": "{\r\n    \"name\" :\"POSTsd\",\r\n    \"email\" : \"test14@test.com\",\r\n    \"password\" : \"12345678\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -537,12 +579,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8400/api/signup",
-					"protocol": "http",
+					"raw": "https://cloth.up.railway.app/api/signup",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"cloth",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8400",
 					"path": [
 						"api",
 						"signup"
@@ -558,7 +602,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n      \"email\" : \"test6@test.com\",\r\n    \"password\" : \"12345678\"\r\n}",
+					"raw": "{\r\n       \"email\" : \"test8@test.com\",\r\n    \"password\" : \"12345678\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -566,12 +610,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8400/api/signin/",
-					"protocol": "http",
+					"raw": "https://cloth.up.railway.app/api/signin/",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"cloth",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8400",
 					"path": [
 						"api",
 						"signin",
@@ -587,25 +633,19 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8400/api/signout",
-					"protocol": "http",
+					"raw": "https://cloth.up.railway.app/api/signout",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"cloth",
+						"up",
+						"railway",
+						"app"
 					],
-					"port": "8400",
 					"path": [
 						"api",
 						"signout"
 					]
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "New Request",
-			"request": {
-				"method": "GET",
-				"header": []
 			},
 			"response": []
 		}
