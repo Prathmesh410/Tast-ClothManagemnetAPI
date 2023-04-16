@@ -94,3 +94,12 @@ exports.isAdmin = (req,res,next) => {
     }
   next();
 };
+
+exports.isSeller = (req,res,next) => {
+    if(req.profile.role !== "seller"){
+      res.status(403).json({
+        error : "Not Seller"
+      });
+    }
+  next();
+};

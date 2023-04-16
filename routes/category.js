@@ -3,7 +3,7 @@ const router = express.Router();
 
 const {getCategoryById,createCategory,getCategory,getAllCategory,updateCategory,removeCategory} = require("../controllers/category")
 const {getUserById} = require("../controllers/user")
-const {isSignedIn, isAuthenticated, isAdmin} = require("../controllers/auth")
+const {isSignedIn, isAuthenticated, isAdmin,isSeller} = require("../controllers/auth")
 
 
 //params
@@ -12,7 +12,7 @@ router.param("categoryId", getCategoryById);
 
 
 //create
-router.post("/category/create/:userId" ,isSignedIn, isAuthenticated, isAdmin ,createCategory);
+router.post("/category/create/:userId" ,isSignedIn, isAuthenticated,isSeller, createCategory);
 
 
 //read routes
@@ -21,8 +21,8 @@ router.get("/categories" , getAllCategory);
 
 //update
 //update route is not authenticated 
-router.put("/category/:categoryId/:userId" ,isSignedIn,isAuthenticated, isAdmin, updateCategory);
+router.put("/category/:categoryId/:userId" ,isSignedIn,isAuthenticated,isSeller, updateCategory);
 
 //remove
-router.delete("/category/:categoryId/:userId" ,isSignedIn,isAuthenticated,isAdmin, removeCategory);
+router.delete("/category/:categoryId/:userId" ,isSignedIn,isAuthenticated,isSeller, removeCategory);
 module.exports = router;

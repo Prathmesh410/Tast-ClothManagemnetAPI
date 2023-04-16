@@ -10,5 +10,5 @@ router.get("/user/:userId" ,isSignedIn, isAuthenticated, getUser);
 
 router.put("/user/:userId" ,isSignedIn, isAuthenticated, updateUser);
 
-router.delete("/user/:userId",isSignedIn,isAuthenticated, deleteUser);
+router.delete("/user/:userId",isSignedIn,isAuthenticated,isAdmin, deleteUser);
 module.exports = router;
