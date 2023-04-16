@@ -1,0 +1,613 @@
+{
+	"info": {
+		"_postman_id": "f1d9e06a-6be1-454b-82c0-c609c455952c",
+		"name": "Cloth Management API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Routes",
+			"item": [
+				{
+					"name": "Get user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE1NjQzNjd9.nmmEsekXDVwrL6yZxN2JiNWJ5Yhg9ZOIVH33PT439hM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8400/api/user/643a8b40fb35ac3a90e91a43",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"user",
+								"643a8b40fb35ac3a90e91a43"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhYWQ3M2JiN2Y0NzA5YzBlODVkNTgiLCJpYXQiOjE2ODE1NjcwOTV9.L6bbHHQu4uIYEpmSMrOQ4QSSfI7QHpq8tEOyjNX4VGs",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role\":\"admin\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8400/api/user/643aad73bb7f4709c0e85d58",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"user",
+								"643aad73bb7f4709c0e85d58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhYWQ3M2JiN2Y0NzA5YzBlODVkNTgiLCJpYXQiOjE2ODE1NjcwOTV9.L6bbHHQu4uIYEpmSMrOQ4QSSfI7QHpq8tEOyjNX4VGs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8400/api/user/643aad73bb7f4709c0e85d58",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"user",
+								"643aad73bb7f4709c0e85d58"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category Routes",
+			"item": [
+				{
+					"name": "Create category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE1NzkyNzd9.LKx6-GppxN2ZX-2YeJcAAltK_ALfgi7odVqZOsyxNag",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Summer male\",\r\n    \"size\":\"40\",\r\n    \"season\":\"summer\",\r\n    \"gender\":\"male\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8400/api/category/create/643a8b40fb35ac3a90e91a43",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"category",
+								"create",
+								"643a8b40fb35ac3a90e91a43"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All categories",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE1NzkyNzd9.LKx6-GppxN2ZX-2YeJcAAltK_ALfgi7odVqZOsyxNag",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8400/api/category/643adcf0794c92400829926e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"category",
+								"643adcf0794c92400829926e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE1Nzk4MTV9.oDaQl7PrxhGfS0pLGSnGfsRSN0U88FCZDMEp5cxT7ak",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"cate2\",\r\n    \"size\": \"40\",\r\n    \"season\": \"summer\",\r\n    \"gender\": \"female\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8400/api/category/643adcf0794c92400829926e/643a8b40fb35ac3a90e91a43",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"category",
+								"643adcf0794c92400829926e",
+								"643a8b40fb35ac3a90e91a43"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8400/api/category/643adcf0794c92400829926e/643a8b40fb35ac3a90e91a43",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"category",
+								"643adcf0794c92400829926e",
+								"643a8b40fb35ac3a90e91a43"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "create product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE2MTQyMjZ9.7BBf5HSFrvXtke4rycMC3Gjl7luuJ9hdfomw_yCL4b4",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Cotton T-Shirt white 3",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "White comfortable and stylish t-shirt made of pure cotton.",
+									"type": "default"
+								},
+								{
+									"key": "category",
+									"value": "643adcf0794c92400829926e",
+									"type": "default"
+								},
+								{
+									"key": "stock",
+									"value": "55",
+									"type": "default"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": [
+										"/C:/Users/prathmesh/Desktop/nermitee/images/isolated-t-shirt-g37bb91867_640.png",
+										"/C:/Users/prathmesh/Desktop/nermitee/images/isolated-t-shirt-g674c9e78d_640.png"
+									]
+								},
+								{
+									"key": "price",
+									"value": "24.5",
+									"type": "default"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8400/api/product/create/643a8b40fb35ac3a90e91a43",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"product",
+								"create",
+								"643a8b40fb35ac3a90e91a43"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL Products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE2MjA2OTN9.t9p9wiGEYNC7Gnppy5EHdhThk2nWuyK2KpfHz6EQVIM",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8400/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "643b75cf063c4423249e4dad\n",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE2MjA2OTN9.t9p9wiGEYNC7Gnppy5EHdhThk2nWuyK2KpfHz6EQVIM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8400/api/product/643b7718063c4423249e4db3/643a8b40fb35ac3a90e91a43",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"product",
+								"643b7718063c4423249e4db3",
+								"643a8b40fb35ac3a90e91a43"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNhOGI0MGZiMzVhYzNhOTBlOTFhNDMiLCJpYXQiOjE2ODE2MjM4MjN9.BlPy9Gsq-bPjLrRcZI_IB9l671Rw5IgKv1kr9lnN0kc",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Black shirt",
+									"type": "default"
+								},
+								{
+									"key": "stock",
+									"value": "20",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8400/api/product/643b9cffd7f77931f0091b54/643a8b40fb35ac3a90e91a43",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"product",
+								"643b9cffd7f77931f0091b54",
+								"643a8b40fb35ac3a90e91a43"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET product",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNiYTE3NmQ3Zjc3OTMxZjAwOTFiNTciLCJpYXQiOjE2ODE2Mjk3OTV9.TBAmo26g5BVuIAFl78U2oHmF_HtD76E5-8LXaelqA08",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8400/api/product/643bb33d46d5cf2bd472d631",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"product",
+								"643bb33d46d5cf2bd472d631"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Unique categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNiYTE3NmQ3Zjc3OTMxZjAwOTFiNTciLCJpYXQiOjE2ODE2Mjk3OTV9.TBAmo26g5BVuIAFl78U2oHmF_HtD76E5-8LXaelqA08",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8400/api/products/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8400",
+							"path": [
+								"api",
+								"products",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" :\"POSTsd\",\r\n    \"email\" : \"test8@test.com\",\r\n    \"password\" : \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8400/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8400",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"email\" : \"test6@test.com\",\r\n    \"password\" : \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8400/api/signin/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8400",
+					"path": [
+						"api",
+						"signin",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8400/api/signout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8400",
+					"path": [
+						"api",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

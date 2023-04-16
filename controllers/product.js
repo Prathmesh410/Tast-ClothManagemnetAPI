@@ -81,7 +81,7 @@ exports.createProduct = (req, res) => {
           error: "Saving product in DB failed",
         });
       }
-      res.json(product);
+      return res.json(product);
     });
   });
 };
